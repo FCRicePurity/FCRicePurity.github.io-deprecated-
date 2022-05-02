@@ -32,3 +32,11 @@ function roast(num) {
     }
     return "Official Foundations whore.";
 }
+
+function uncheckBoxes() {
+    var inputElems = document.getElementsByTagName("input");
+    for (var checkbox of inputElems) {
+        checkbox.checked = false;
+    }
+    window.scrollTo(0, 0);
+}
