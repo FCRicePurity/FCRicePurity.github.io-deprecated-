@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foundations Purity</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="app.css">
+</head>
+
+<body>
+    <!-- NAVBAR START -->
+    <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="https://www.instagram.com/foundationschoreo/" target="_blank"
+                rel="noreferrer noopener">
+                <img src="fc2.png" alt="" width="25" heigh="25" class="d-inline-block align-text-top">
+                Foundations Choreography
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://www.instagram.com/foundationschoreo/" target="_blank"
+                            rel="noreferrer noopener">Instagram</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://www.facebook.com/FoundationsChoreo" target="_blank"
+                            rel="noreferrer noopener">Facebook</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://www.youtube.com/c/FoundationsChoreography" target="_blank"
+                            rel="noreferrer noopener">Youtube</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://lnk.bio/dxlo/" target="_blank"
+                            rel="noreferrer noopener">Useful Links</a>
+                    </li>
+                </ul>
+                <button class="btn btn-secondary nav-btn d-flex" type="button" onclick="giveScore()">
+                    Calculate Score
+                </button>
+            </div>
+
+        </div>
+    </nav>
+    <!-- NAVBAR END -->
+    <!-- INTRO START -->
+    <section id="intro" class="container">
+        <h1 class="display-1">The "Official" Foundations Purity Test</h1>
+        <p class="fs-4 body">
+            The Foundations Purity Test serves to catalogue the true Foundations experience here at UCLA.
+            It is an oppurtunity for Foundations dancers to bond over shared experiences and track how embedded
+            Foundations Choreography has become in their lives.
+        </p>
+        <p class="fs-4 body warning">
+            Caution: This is not a bucket list. Completion of all items on this test will likely result in getting too
+            lit.
+        </p>
+        <p class="fs-2 warning" id="score"></p>
+    </section>
+    <!-- INTRO END -->
+    <!-- QUESTIONS START -->
+    <div id="list">
+        <ol>
+            <li><input type="checkbox" id="1"><label for="1"></label></li>
+            <li><input type="checkbox" id="2"><label for="2"></label></li>
+            <li><input type="checkbox" id="3"><label for="3"></label></li>
+            <li><input type="checkbox" id="4"><label for="4"></label></li>
+            <li><input type="checkbox" id="5"><label for="5"></label></li>
+            <li><input type="checkbox" id="6"><label for="6"></label></li>
+            <li><input type="checkbox" id="7"><label for="7"></label></li>
+            <li><input type="checkbox" id="8"><label for="8"></label></li>
+            <li><input type="checkbox" id="9"><label for="9"></label></li>
+            <li><input type="checkbox" id="10"><label for="10"></label></li>
+            <li><input type="checkbox" id="11"><label for="11"></label></li>
+            <li><input type="checkbox" id="12"><label for="12"></label></li>
+            <li><input type="checkbox" id="13"><label for="13"></label></li>
+            <li><input type="checkbox" id="14"><label for="14"></label></li>
+            <li><input type="checkbox" id="15"><label for="15"></label></li>
+            <li><input type="checkbox" id="16"><label for="16"></label></li>
+            <li><input type="checkbox" id="17"><label for="17"></label></li>
+            <li><input type="checkbox" id="18"><label for="18"></label></li>
+            <li><input type="checkbox" id="19"><label for="19"></label></li>
+            <li><input type="checkbox" id="20"><label for="20"></label></li>
+            <li><input type="checkbox" id="21"><label for="21"></label></li>
+            <li><input type="checkbox" id="22"><label for="22"></label></li>
+            <li><input type="checkbox" id="23"><label for="23"></label></li>
+            <li><input type="checkbox" id="24"><label for="24"></label></li>
+            <li><input type="checkbox" id="25"><label for="25"></label></li>
+            <li><input type="checkbox" id="26"><label for="26"></label></li>
+            <li><input type="checkbox" id="27"><label for="27"></label></li>
+            <li><input type="checkbox" id="28"><label for="28"></label></li>
+            <li><input type="checkbox" id="29"><label for="29"></label></li>
+            <li><input type="checkbox" id="30"><label for="30"></label></li>
+            <li><input type="checkbox" id="31"><label for="31"></label></li>
+            <li><input type="checkbox" id="32"><label for="32"></label></li>
+            <li><input type="checkbox" id="33"><label for="33"></label></li>
+            <li><input type="checkbox" id="34"><label for="34"></label></li>
+            <li><input type="checkbox" id="35"><label for="35"></label></li>
+            <li><input type="checkbox" id="36"><label for="36"></label></li>
+            <li><input type="checkbox" id="37"><label for="37"></label></li>
+            <li><input type="checkbox" id="38"><label for="38"></label></li>
+            <li><input type="checkbox" id="39"><label for="39"></label></li>
+            <li><input type="checkbox" id="40"><label for="40"></label></li>
+            <li><input type="checkbox" id="41"><label for="41"></label></li>
+            <li><input type="checkbox" id="42"><label for="42"></label></li>
+            <li><input type="checkbox" id="43"><label for="43"></label></li>
+            <li><input type="checkbox" id="44"><label for="44"></label></li>
+            <li><input type="checkbox" id="45"><label for="45"></label></li>
+            <li><input type="checkbox" id="46"><label for="46"></label></li>
+            <li><input type="checkbox" id="47"><label for="47"></label></li>
+            <li><input type="checkbox" id="48"><label for="48"></label></li>
+            <li><input type="checkbox" id="49"><label for="49"></label></li>
+            <li><input type="checkbox" id="50"><label for="50"></label></li>
+            <li><input type="checkbox" id="51"><label for="51"></label></li>
+            <li><input type="checkbox" id="52"><label for="52"></label></li>
+            <li><input type="checkbox" id="53"><label for="53"></label></li>
+            <li><input type="checkbox" id="54"><label for="54"></label></li>
+            <li><input type="checkbox" id="55"><label for="55"></label></li>
+            <li><input type="checkbox" id="56"><label for="56"></label></li>
+            <li><input type="checkbox" id="57"><label for="57"></label></li>
+            <li><input type="checkbox" id="58"><label for="58"></label></li>
+            <li><input type="checkbox" id="59"><label for="59"></label></li>
+            <li><input type="checkbox" id="60"><label for="60"></label></li>
+            <li><input type="checkbox" id="61"><label for="61"></label></li>
+            <li><input type="checkbox" id="62"><label for="62"></label></li>
+            <li><input type="checkbox" id="63"><label for="63"></label></li>
+            <li><input type="checkbox" id="64"><label for="64"></label></li>
+            <li><input type="checkbox" id="65"><label for="65"></label></li>
+            <li><input type="checkbox" id="66"><label for="66"></label></li>
+            <li><input type="checkbox" id="67"><label for="67"></label></li>
+            <li><input type="checkbox" id="68"><label for="68"></label></li>
+            <li><input type="checkbox" id="69"><label for="69"></label></li>
+            <li><input type="checkbox" id="70"><label for="70"></label></li>
+            <li><input type="checkbox" id="71"><label for="71"></label></li>
+            <li><input type="checkbox" id="72"><label for="72"></label></li>
+            <li><input type="checkbox" id="73"><label for="73"></label></li>
+            <li><input type="checkbox" id="74"><label for="74"></label></li>
+            <li><input type="checkbox" id="75"><label for="75"></label></li>
+            <li><input type="checkbox" id="76"><label for="76"></label></li>
+            <li><input type="checkbox" id="77"><label for="77"></label></li>
+            <li><input type="checkbox" id="78"><label for="78"></label></li>
+            <li><input type="checkbox" id="79"><label for="79"></label></li>
+            <li><input type="checkbox" id="80"><label for="80"></label></li>
+            <li><input type="checkbox" id="81"><label for="81"></label></li>
+            <li><input type="checkbox" id="82"><label for="82"></label></li>
+            <li><input type="checkbox" id="83"><label for="83"></label></li>
+            <li><input type="checkbox" id="84"><label for="84"></label></li>
+            <li><input type="checkbox" id="85"><label for="85"></label></li>
+            <li><input type="checkbox" id="86"><label for="86"></label></li>
+            <li><input type="checkbox" id="87"><label for="87"></label></li>
+            <li><input type="checkbox" id="88"><label for="88"></label></li>
+            <li><input type="checkbox" id="89"><label for="89"></label></li>
+            <li><input type="checkbox" id="90"><label for="90"></label></li>
+            <li><input type="checkbox" id="91"><label for="91"></label></li>
+            <li><input type="checkbox" id="92"><label for="92"></label></li>
+            <li><input type="checkbox" id="93"><label for="93"></label></li>
+            <li><input type="checkbox" id="94"><label for="94"></label></li>
+            <li><input type="checkbox" id="95"><label for="95"></label></li>
+            <li><input type="checkbox" id="96"><label for="96"></label></li>
+            <li><input type="checkbox" id="97"><label for="97"></label></li>
+            <li><input type="checkbox" id="98"><label for="98"></label></li>
+            <li><input type="checkbox" id="99"><label for="99"></label></li>
+            <li><input type="checkbox" id="100"><label for="100"></label></li>
+        </ol>
+    </div>
+    <!-- QUESTIONS END -->
+
+    <!-- JS START -->
+    <script>
+        function giveScore() {
+            var element = document.getElementById("score");
+            var score = checkboxes();
+            element.innerHTML = "You scored " + score + "! Rating: " + roast(score);
+            element.scrollIntoView({ block: "center" });
+        }
+        function checkboxes() {
+            var inputElems = document.getElementsByTagName("input"),
+                count = 100;
+            for (var i = 0; i < inputElems.length; i++) {
+                if (inputElems[i].type === "checkbox" && inputElems[i].checked === true) {
+                    count--;
+                }
+            }
+            return count;
+        }
+        function roast(num) {
+            if (num == 100) {
+                return "Haven't touched a team yet.";
+            }
+            if (num > 85) {
+                return "Foundations virgin.";
+            }
+            if (num > 70) {
+                return "You've been on a team or two.";
+            }
+            if (num > 50) {
+                return "You live for Foundations.";
+            }
+            if (num > 25) {
+                return "Is getting this spicy allowed?";
+            }
+            return "Official Foundations whore.";
+        }
+    </script>
+
+    <!--
+        Bootstrap JS
+    -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
+
+<!--
+    function checkboxes(){
+    var inputElems = document.getElementsByTagName("input"),
+    count = 0;
+    for (var i=0; i<inputElems.length; i++) {
+    if (inputElems[i].type === "checkbox" && inputElems[i].checked === true){
+        count++;
+        alert(count);
+    }
+}}
+-->

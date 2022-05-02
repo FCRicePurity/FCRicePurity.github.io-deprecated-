@@ -1,0 +1,31 @@
+body {
+    background-color: #a9d6e5;
+    font-family: 'Roboto', sans-serif;
+}
+
+#intro {
+    font-size: 1.2em;
+    display: flex;
+    margin: 0 auto;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.body {
+    text-align: left;
+    padding: 0 8%;
+}
+
+.warning {
+    font-weight: bold;
+}
+
+#list {
+    display: flex;
+    flex-direction: column;
+}
+
+ol {
+    margin-left: 1em;
+}
