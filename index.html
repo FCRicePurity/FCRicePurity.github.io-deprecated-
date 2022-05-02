@@ -13,6 +13,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="app.css">
+    <script src="fcpurity.js"></script>
 </head>
 
 <body>
@@ -43,10 +44,15 @@
                             rel="noreferrer noopener">Youtube</a>
                     </li>
                     <li class="nav-item">
+                        <a class="nav-link" href="https://github.com/FCRicePurity/FCRicePurity.github.io/tree/main"
+                            target="_blank" rel="noreferrer noopener">Github</a>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link" href="https://lnk.bio/dxlo/" target="_blank"
                             rel="noreferrer noopener">Useful Links</a>
                     </li>
                 </ul>
+
                 <button class="btn btn-secondary nav-btn d-flex" type="button" onclick="giveScore()">
                     Calculate Score
                 </button>
@@ -178,44 +184,6 @@
     </div>
     <!-- QUESTIONS END -->
 
-    <!-- JS START -->
-    <script>
-        function giveScore() {
-            var element = document.getElementById("score");
-            var score = checkboxes();
-            element.innerHTML = "You scored " + score + "! Rating: " + roast(score);
-            element.scrollIntoView({ block: "center" });
-        }
-        function checkboxes() {
-            var inputElems = document.getElementsByTagName("input"),
-                count = 100;
-            for (var i = 0; i < inputElems.length; i++) {
-                if (inputElems[i].type === "checkbox" && inputElems[i].checked === true) {
-                    count--;
-                }
-            }
-            return count;
-        }
-        function roast(num) {
-            if (num == 100) {
-                return "Haven't touched a team yet.";
-            }
-            if (num > 85) {
-                return "Foundations virgin.";
-            }
-            if (num > 70) {
-                return "You've been on a team or two.";
-            }
-            if (num > 50) {
-                return "You live for Foundations.";
-            }
-            if (num > 25) {
-                return "Is getting this spicy allowed?";
-            }
-            return "Official Foundations whore.";
-        }
-    </script>
-
     <!--
         Bootstrap JS
     -->
@@ -225,15 +193,3 @@
 </body>
 
 </html>
-
-<!--
-    function checkboxes(){
-    var inputElems = document.getElementsByTagName("input"),
-    count = 0;
-    for (var i=0; i<inputElems.length; i++) {
-    if (inputElems[i].type === "checkbox" && inputElems[i].checked === true){
-        count++;
-        alert(count);
-    }
-}}
--->
