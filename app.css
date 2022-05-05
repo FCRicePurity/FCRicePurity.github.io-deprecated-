@@ -21,15 +21,6 @@ body {
     font-weight: bold;
 }
 
-#list {
-    display: flex;
-    flex-direction: column;
-}
-
-ol {
-    margin-left: 1em;
-}
-
-label {
-    margin: 0 0.5em;
+input {
+    margin: 0 0.25em;
 }
